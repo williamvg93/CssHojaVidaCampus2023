@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('font/Barlow_Condensed,Rajdhani/Barlow_Condensed/BarlowCondensed-ExtraLight.ttf');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('font/Barlow_Condensed,Rajdhani/Barlow_Condensed/BarlowCondensed-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url('font/Barlow_Condensed,Rajdhani/Barlow_Condensed/BarlowCondensed-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+* {
+    font-family: 'Barlow';
+    font-size: 24px;
+    margin: 0px;
+    color: rgb(84, 56, 32);
+}
+
+
+body {
+    background: #603813;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b29f94, #603813);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b29f94, #603813);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 1rem;
+}
+
+.mainHead {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 3px solid rgb(135, 111, 91);
+    color: rgb(59, 36, 16);
+    text-shadow: -2px 1px 2px rgb(145, 82, 28);
+}
+
+.threeTitle,
+.forTitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: rgb(95, 70, 48);
+    text-shadow: -2px 1px 2px rgb(156, 104, 58);
+}
+
+.main_cont {
+    margin: 2rem auto;
+    padding: 10px;
+    border: 3px inset slategrey;
+    background-color: rgb(199, 177, 160);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+
+    /*     grid-template-areas:"perfil infoskills comple"
+    "perfil infoskills comple"
+    "perfil infoskills comple"; */
+    row-gap: 10px;
+    column-gap: 10px;
+    max-width: 1400px;
+}
+
+.part1 {
+    display: grid;
+    justify-self: center;
+    row-gap: 10px;
+    /* border: 3px solid cadetblue; */
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px;
+    min-width: 400px;
+    grid-template-areas: "Perdata"
+        "perfilPr"
+        "perfilPr";
+}
+
+.data {
+    padding: 1rem;
+    grid-area: Perdata;
+    /* border: 3px solid black; */
+    /* border-bottom: 1px solid red; */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    row-gap: 15px;
+    grid-template-areas: "img"
+        "perinfo";
+}
+
+.conIma {
+    grid-area: img;
+    /* border: 2px inset rgb(54, 21, 5); */
+    display: grid;
+    justify-content: center;
+}
+
+.perImg {
+    background-image: url('../img/foto.png');
+    background-color: rgb(232, 214, 201);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 160px;
+    height: 160px;
+    /* border: 2px inset rgb(54, 21, 5); */
+    border-radius: 50%;
+}
+
+.perInfo {
+    grid-area: perinfo;
+    /* border: 2px solid yellow; */
+}
+
+.perInfo .mainHead {
+    margin-top: 0px;
+}
+
+.titInfo {
+    margin-bottom: 10px;
+    padding: 0px;
+    text-align: center;
+}
+
+.proPer {
+    padding: 1rem;
+    grid-area: perfilPr;
+    /* border: 3px solid red; */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    /* display: grid;
+    justify-content: center;
+    align-items: center; */
+}
+
+.textPerPro {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.part2 {
+    display: grid;
+    justify-self: center;
+    width: 100%;
+    max-width: 600px;
+    min-width: 400px;
+    /* border: 3px solid darkolivegreen; */
+    padding: 1rem;
+    grid-template-areas: "skill"
+        "perPro"
+        "archi";
+    row-gap: 10px;
+}
+
+.skills {
+    padding: 1rem;
+    grid-area: skill;
+    /* border: 2px solid green; */
+    text-align: center;
+    display: grid;
+    row-gap: 5px;
+    justify-content: center;
+    align-content: center;
+    /* border-bottom: 1px solid red; */
+}
+
+.contSkills {
+    /* border-top: 1px solid cadetblue; */
+    display: grid;
+    max-width: 350px;
+    grid-template-areas: "infoSkill imgSkill";
+    justify-content: center;
+    align-content: center;
+    column-gap: 20px;
+    padding-top: 1rem;
+    margin: 0.6rem;
+}
+
+.infoSkill {
+    grid-area: infoSkill;
+    /* border: 1px solid chartreuse; */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+}
+
+.imgSkill {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.imgSkill img {
+    max-width: 95px;
+    grid-area: imgSkill;
+    /* border: 1px solid coral; */
+}
+
+.perPro {
+    padding: 1rem;
+    grid-area: perPro;
+    /* border: 2px solid green; */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /* border-bottom: 1px solid red; */
+}
+
+.archi {
+    padding: 1rem;
+    grid-area: archi;
+    /* border: 2px solid green; */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.part3 {
+    display: grid;
+    width: 100%;
+    max-width: 600px;
+    min-width: 400px;
+    justify-self: center;
+    /* border: 3px solid orchid; */
+    padding: 1rem;
+    grid-template-areas: "leng"
+        "stud"
+        "expe";
+    row-gap: 10px;
+}
+
+.leng {
+    padding: 1rem;
+    grid-area: leng;
+    /* border: 2px solid green; */
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /* border-bottom: 1px solid red; */
+}
+
+.stud {
+    padding: 1rem;
+    grid-area: stud;
+    /* border: 2px solid green; */
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    /* border-bottom: 1px solid red; */
+}
+
+.expe {
+    padding: 1rem;
+    grid-area: expe;
+    /* border: 2px solid green; */
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
